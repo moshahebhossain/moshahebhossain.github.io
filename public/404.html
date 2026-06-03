@@ -1,22 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Redirecting…</title>
-  <script>
-    (function () {
-      var path = window.location.pathname;
-      var search = window.location.search || '';
-      var hash = window.location.hash || '';
-      // If we've already been redirected (search contains `p=`), don't re-redirect.
-      if (search.indexOf('p=') !== -1) {
-        return;
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moshaheb Hossain — Business Analyst & Product Owner</title>
+    <meta name="description" content="Portfolio of Md. Moshaheb Hossain — Business Analyst & Product Owner based in Dhaka, Bangladesh." />
+    <meta name="theme-color" content="#0a0908" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0a0908;
+        --surface: #0d0c0a;
+        --text: #f0ebe3;
+        --muted: #8a8176;
+        --border: #242019;
+        --gold: #c9a55a;
       }
-      var target = '/?p=' + encodeURIComponent(path) + search + hash;
-      window.location.replace(target);
-    })();
-  </script>
-</head>
-<body></body>
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: radial-gradient(circle at top, rgba(201,165,90,.08), transparent 35%), var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      a { color: inherit; text-decoration: none; }
+      .wrap { width: min(1100px, calc(100% - 32px)); margin: 0 auto; }
+      .topbar { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(14px); background: rgba(10,9,8,.78); border-bottom: 1px solid rgba(36,32,25,.7); }
+      .topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; }
+      .brand { font-weight: 700; letter-spacing: .02em; }
+      .brand span { color: var(--gold); }
+      .nav { display: flex; gap: 16px; flex-wrap: wrap; color: var(--muted); font-size: 14px; }
+      .nav a:hover { color: var(--text); }
+      .hero { padding: 88px 0 48px; }
+      .eyebrow { color: var(--gold); text-transform: uppercase; letter-spacing: .18em; font-size: 12px; font-weight: 700; }
+      h1 { margin: 14px 0 16px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(42px, 8vw, 86px); line-height: .95; font-weight: 600; }
+      .lede { max-width: 760px; color: var(--muted); font-size: clamp(16px, 2.1vw, 19px); }
+      .actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; }
+      .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-weight: 600; }
+      .btn.primary { background: var(--gold); border-color: var(--gold); color: #1a1410; }
+      .grid { display: grid; gap: 18px; grid-template-columns: repeat(12, 1fr); }
+      .card { background: linear-gradient(180deg, rgba(18,16,13,.96), rgba(13,12,10,.96)); border: 1px solid var(--border); border-radius: 20px; padding: 24px; }
+      .stat { grid-column: span 4; }
+      .stat strong { display: block; font-size: 28px; margin-bottom: 6px; color: var(--gold); }
+      .section { padding: 22px 0 4px; }
+      .section h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .18em; color: var(--gold); margin: 0 0 14px; }
+      .section h3 { margin: 0 0 10px; font-size: 24px; }
+      .cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .pill { display: inline-flex; align-items: center; padding: 7px 12px; border-radius: 999px; background: rgba(201,165,90,.12); color: #ead7ac; border: 1px solid rgba(201,165,90,.22); margin: 0 8px 8px 0; font-size: 13px; }
+      .list { margin: 0; padding-left: 18px; color: var(--muted); }
+      .list li + li { margin-top: 8px; }
+      .muted { color: var(--muted); }
+      .footer { padding: 38px 0 60px; color: var(--muted); }
+      @media (max-width: 860px) { .stat { grid-column: span 12; } .cols-2, .cols-3 { grid-template-columns: 1fr; } .nav { display: none; } }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap">
+        <div class="brand">Moshaheb <span>Hossain</span></div>
+        <nav class="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <div class="eyebrow">Business Analyst &amp; Product Owner</div>
+        <h1>Md. Moshaheb Hossain</h1>
+        <p class="lede">Portfolio of a business analyst and product owner based in Dhaka, Bangladesh, with experience in OTA, ERP, accounting, e-commerce, and ride-sharing platforms.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">View Work</a>
+          <a class="btn" href="mailto:moshaheb.hossain007@gmail.com">Contact</a>
+          <a class="btn" href="#experience">Resume Snapshot</a>
+        </div>
+      </section>
+      <section class="grid">
+        <article class="card stat"><strong>OTA</strong>Product discovery, booking journeys, inventory, payments, and partner workflows.</article>
+        <article class="card stat"><strong>ERP</strong>Process mapping, requirements, reporting, and stakeholder coordination.</article>
+        <article class="card stat"><strong>Delivery</strong>User stories, acceptance criteria, UAT support, and launch readiness.</article>
+      </section>
+      <section class="section" id="about">
+        <h2>About</h2>
+        <div class="card cols-2 grid">
+          <div>
+            <h3>Business outcomes first</h3>
+            <p class="muted">I work across product, operations, and stakeholders to turn business needs into clear workflows, measurable requirements, and release-ready solutions.</p>
+          </div>
+          <div>
+            <h3>Focus areas</h3>
+            <div>
+              <span class="pill">Process design</span>
+              <span class="pill">Requirements analysis</span>
+              <span class="pill">Stakeholder alignment</span>
+              <span class="pill">UAT support</span>
+              <span class="pill">Product documentation</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="card cols-3 grid">
+          <div><h3>Product</h3><p class="muted">Backlog grooming, prioritization, roadmap support, sprint coordination.</p></div>
+          <div><h3>Analysis</h3><p class="muted">Process flow, gap analysis, BRD/SRS, requirement validation.</p></div>
+          <div><h3>Communication</h3><p class="muted">Cross-functional collaboration, workshops, demos, and stakeholder updates.</p></div>
+        </div>
+      </section>
+      <section class="section" id="experience">
+        <h2>Experience</h2>
+        <div class="card">
+          <h3>Business Analyst / Product Owner</h3>
+          <p class="muted">OTA, ERP, accounting, e-commerce, and ride-sharing domains.</p>
+          <ul class="list">
+            <li>Converted business goals into actionable user stories and acceptance criteria.</li>
+            <li>Worked with design, engineering, QA, and operations to ship improvements.</li>
+            <li>Supported releases, UAT, and issue triage to keep delivery on track.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section" id="projects">
+        <h2>Projects</h2>
+        <div class="card cols-3 grid">
+          <div><h3>Travel / OTA</h3><p class="muted">Booking flow, supplier integration, and reconciliation support.</p></div>
+          <div><h3>ERP Workflow</h3><p class="muted">Process mapping, approvals, and reporting enhancements.</p></div>
+          <div><h3>Customer Platform</h3><p class="muted">Operational improvements for e-commerce and service delivery.</p></div>
+        </div>
+      </section>
+      <section class="section" id="contact">
+        <h2>Contact</h2>
+        <div class="card cols-2 grid">
+          <div><h3>Let's connect</h3><p class="muted">Email: moshaheb.hossain007@gmail.com</p></div>
+          <div><h3>Quick links</h3><p class="muted"><a href="mailto:moshaheb.hossain007@gmail.com">Send email</a> · <a href="#about">About</a> · <a href="#projects">Projects</a></p></div>
+        </div>
+      </section>
+      <div class="footer">© 2026 Moshaheb Hossain</div>
+    </main>
+  </body>
 </html>
