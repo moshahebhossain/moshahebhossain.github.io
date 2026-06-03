@@ -3,147 +3,325 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Moshaheb Hossain — Business Analyst & Product Owner</title>
-    <meta
-      name="description"
-      content="Portfolio of Md. Moshaheb Hossain — Business Analyst & Product Owner based in Dhaka, Bangladesh."
-    />
-    <meta name="theme-color" content="#0a0908" />
+    <title>Md. Moshaheb Hossain — Business Analyst & Product Owner</title>
+    <meta name="description" content="Portfolio of Md. Moshaheb Hossain — Senior Business Analyst and Product Owner with 4+ years of experience across OTA platforms, ERP, fintech, and enterprise SaaS." />
+    <meta name="theme-color" content="#0A0908" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet" />
     <style>
       :root {
-        color-scheme: dark;
-        --bg: #0a0908;
-        --surface: #0d0c0a;
-        --text: #f0ebe3;
-        --muted: #8a8176;
-        --border: #242019;
-        --gold: #c9a55a;
+        --bg: #0A0908;
+        --surface: #0D0C0A;
+        --gold: #C9A55A;
+        --text: #F0EBE3;
+        --muted: #7A7166;
+        --border: #1C1914;
       }
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
-      body {
-        margin: 0;
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        background: radial-gradient(circle at top, rgba(201,165,90,.08), transparent 35%), var(--bg);
-        color: var(--text);
-        line-height: 1.6;
-      }
+      body { margin: 0; background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; }
       a { color: inherit; text-decoration: none; }
-      .wrap { width: min(1100px, calc(100% - 32px)); margin: 0 auto; }
-      .topbar { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(14px); background: rgba(10,9,8,.78); border-bottom: 1px solid rgba(36,32,25,.7); }
-      .topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; }
-      .brand { font-weight: 700; letter-spacing: .02em; }
+      .wrap { width: min(1200px, calc(100% - 32px)); margin: 0 auto; }
+      .nav { position: sticky; top: 0; z-index: 20; background: rgba(10,9,8,.88); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(201,165,90,.12); }
+      .nav .wrap { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+      .brand { font-family: 'Cormorant Garamond', serif; font-size: 1.45rem; font-weight: 600; letter-spacing: -.02em; }
       .brand span { color: var(--gold); }
-      .nav { display: flex; gap: 16px; flex-wrap: wrap; color: var(--muted); font-size: 14px; }
-      .nav a:hover { color: var(--text); }
-      .hero { padding: 88px 0 48px; }
-      .eyebrow { color: var(--gold); text-transform: uppercase; letter-spacing: .18em; font-size: 12px; font-weight: 700; }
-      h1 { margin: 14px 0 16px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(42px, 8vw, 86px); line-height: .95; font-weight: 600; }
-      .lede { max-width: 760px; color: var(--muted); font-size: clamp(16px, 2.1vw, 19px); }
-      .actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; }
-      .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-weight: 600; }
-      .btn.primary { background: var(--gold); border-color: var(--gold); color: #1a1410; }
-      .grid { display: grid; gap: 18px; grid-template-columns: repeat(12, 1fr); }
-      .card { background: linear-gradient(180deg, rgba(18,16,13,.96), rgba(13,12,10,.96)); border: 1px solid var(--border); border-radius: 20px; padding: 24px; }
-      .stat { grid-column: span 4; }
-      .stat strong { display: block; font-size: 28px; margin-bottom: 6px; color: var(--gold); }
-      .section { padding: 22px 0 4px; }
-      .section h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .18em; color: var(--gold); margin: 0 0 14px; }
-      .section h3 { margin: 0 0 10px; font-size: 24px; }
-      .cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .pill { display: inline-flex; align-items: center; padding: 7px 12px; border-radius: 999px; background: rgba(201,165,90,.12); color: #ead7ac; border: 1px solid rgba(201,165,90,.22); margin: 0 8px 8px 0; font-size: 13px; }
-      .list { margin: 0; padding-left: 18px; color: var(--muted); }
-      .list li + li { margin-top: 8px; }
-      .muted { color: var(--muted); }
-      .footer { padding: 38px 0 60px; color: var(--muted); }
-      @media (max-width: 860px) { .stat { grid-column: span 12; } .cols-2, .cols-3 { grid-template-columns: 1fr; } .nav { display: none; } }
+      .navlinks { display: flex; gap: 18px; flex-wrap: wrap; }
+      .navlinks a { font-size: .72rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
+      .navlinks a:hover { color: var(--gold); }
+      .section-label { display: inline-block; font-size: .65rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); padding: .25rem .6rem; border: 1px solid rgba(201,165,90,.3); border-radius: 2px; margin-bottom: 1rem; }
+      .hero { min-height: 100vh; display: flex; align-items: center; padding: 6rem 0 4rem; }
+      .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 4rem; align-items: center; }
+      h1, h2, h3 { font-family: 'Cormorant Garamond', serif; margin: 0; }
+      .hero h1 { font-size: clamp(3rem, 6vw, 5.5rem); line-height: 1.04; letter-spacing: -.025em; margin: .25rem 0 1.25rem; }
+      .lede { font-size: 1rem; color: var(--muted); line-height: 1.8; max-width: 530px; }
+      .actions { display: flex; flex-wrap: wrap; gap: .9rem; margin-top: 2.25rem; }
+      .btn-gold, .btn-outline-gold { display:inline-flex; align-items:center; gap:.5rem; padding:.7rem 1.75rem; font-size:.75rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; border-radius:2px; }
+      .btn-gold { background: var(--gold); color:#0A0908; }
+      .btn-outline-gold { border:1px solid rgba(201,165,90,.45); color: var(--gold); }
+      .photo-card { position: relative; width: 300px; margin-left: auto; }
+      .photo-card .backing { position:absolute; inset:-18px; background: linear-gradient(135deg, rgba(201,165,90,.12), rgba(201,165,90,.04)); border:1px solid rgba(201,165,90,.2); }
+      .photo-card img { width:100%; display:block; border-radius:2px; object-fit:cover; aspect-ratio:.82; }
+      .badge { position:absolute; left:-14px; bottom:-14px; background:#0D0C0A; border:1px solid rgba(201,165,90,.35); padding:.6rem .85rem; border-radius:2px; }
+      .badge .a { font-size:.58rem; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:.15rem; }
+      .badge .b { font-size:.72rem; color:var(--gold); font-weight:700; line-height:1.3; }
+      .badge .c { font-size:.62rem; color:#5A5550; }
+      .stats { border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+      .stats-grid { display:grid; grid-template-columns: repeat(4, 1fr); gap:1rem; padding: 2rem 0; }
+      .stat { text-align:center; }
+      .stat .num { font-family:'Cormorant Garamond', serif; font-size:2.8rem; font-weight:700; color:var(--gold); line-height:1; }
+      .stat .label { font-size:.65rem; letter-spacing:.12em; text-transform:uppercase; color:#5A5550; margin-top:.4rem; }
+      .section { padding: 6rem 0; }
+      .heading { margin-bottom: 3.25rem; }
+      .heading h2 { font-size: clamp(2rem, 4vw, 2.8rem); line-height:1.1; letter-spacing:-.02em; }
+      .card-grid { display:grid; gap: 1.5px; background: var(--border); border: 1px solid var(--border); }
+      .competency-card, .domain-card, .resume-card { background: var(--surface); }
+      .competency-card { padding:2rem 1.75rem; }
+      .competency-card .icon { font-size:1.3rem; color:var(--gold); margin-bottom:.85rem; }
+      .competency-card h3 { font-size:1.25rem; margin-bottom:1.25rem; }
+      .competency-card ul { list-style:none; padding:0; margin:0; }
+      .competency-card li { font-size:.8rem; color:#6A6460; padding:.35rem 0; border-bottom:1px solid #1A1714; display:flex; align-items:center; gap:.6rem; }
+      .dot { width:3px; height:3px; border-radius:50%; background:var(--gold); display:inline-block; flex-shrink:0; }
+      .cols-2 { display:grid; grid-template-columns: 1.15fr .95fr; gap: 5rem; align-items:start; }
+      .cols-3 { display:grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; background: var(--border); border: 1px solid var(--border); }
+      .gallery { display:grid; grid-template-columns: 1.15fr 1fr 1fr; grid-template-rows:auto auto; gap:6px; }
+      .gallery-img { overflow:hidden; border-radius:2px; }
+      .gallery-img img { display:block; width:100%; height:100%; object-fit:cover; transition: transform .6s cubic-bezier(.22,.68,0,1.2); }
+      .gallery-img:hover img { transform: scale(1.06); }
+      .timeline { position:relative; padding-left:2.5rem; }
+      .timeline-line { position:absolute; left:0; top:12px; bottom:0; width:1px; background: linear-gradient(to bottom, var(--gold), rgba(201,165,90,.1)); }
+      .timeline-dot { position:absolute; left:-5px; top:10px; width:11px; height:11px; border-radius:50%; background:var(--gold); border:2px solid var(--bg); box-shadow:0 0 0 3px rgba(201,165,90,.2); }
+      .job { position:relative; }
+      .job-card { background: var(--surface); border:1px solid var(--border); border-radius:3px; padding:1.75rem 2rem; }
+      .pill { display:inline-block; margin:0 .5rem .5rem 0; padding:.5rem 1rem; background:#131110; border:1px solid #252118; color:#C0B8AE; font-size:.8rem; border-radius:2px; }
+      .small { color: var(--muted); font-size: .9rem; line-height: 1.8; }
+      .footer { border-top:1px solid var(--border); background:#050403; padding: 3rem 0 2rem; color:#5A5550; }
+      .footer-grid { display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin-bottom: 2.5rem; }
+      .footer h3 { font-size: 1.5rem; margin-bottom:.5rem; }
+      .footer .label { font-size:.65rem; letter-spacing:.14em; text-transform:uppercase; color:#7A7166; margin-bottom:.75rem; font-weight:600; }
+      .footer a { color:#5A5550; }
+      .footer a:hover { color: var(--gold); }
+      .copyright { border-top:1px solid var(--border); padding-top:1.5rem; text-align:center; font-size:.7rem; color:#3A3530; }
+      @media (max-width: 1020px) {
+        .hero-grid, .cols-2, .footer-grid { grid-template-columns: 1fr; }
+        .photo-card { margin: 0; }
+      }
+      @media (max-width: 860px) {
+        .stats-grid { grid-template-columns: 1fr 1fr; }
+        .gallery, .cols-3 { grid-template-columns: 1fr; }
+        .navlinks { display:none; }
+      }
+      @media (max-width: 560px) {
+        .stats-grid { grid-template-columns: 1fr; }
+      }
     </style>
   </head>
   <body>
-    <header class="topbar">
+    <header class="nav">
       <div class="wrap">
-        <div class="brand">Moshaheb <span>Hossain</span></div>
-        <nav class="nav" aria-label="Primary">
+        <a href="#home" class="brand">Moshaheb <span>Hossain</span></a>
+        <nav class="navlinks" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
+          <a href="#resume">Resume</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
-    <main class="wrap">
+
+    <main id="home">
       <section class="hero">
-        <div class="eyebrow">Business Analyst &amp; Product Owner</div>
-        <h1>Md. Moshaheb Hossain</h1>
-        <p class="lede">Portfolio of a business analyst and product owner based in Dhaka, Bangladesh, with experience in OTA, ERP, accounting, e-commerce, and ride-sharing platforms.</p>
-        <div class="actions">
-          <a class="btn primary" href="#projects">View Work</a>
-          <a class="btn" href="mailto:moshaheb.hossain007@gmail.com">Contact</a>
-          <a class="btn" href="#experience">Resume Snapshot</a>
-        </div>
-      </section>
-      <section class="grid">
-        <article class="card stat"><strong>OTA</strong>Product discovery, booking journeys, inventory, payments, and partner workflows.</article>
-        <article class="card stat"><strong>ERP</strong>Process mapping, requirements, reporting, and stakeholder coordination.</article>
-        <article class="card stat"><strong>Delivery</strong>User stories, acceptance criteria, UAT support, and launch readiness.</article>
-      </section>
-      <section class="section" id="about">
-        <h2>About</h2>
-        <div class="card cols-2 grid">
+        <div class="wrap hero-grid">
           <div>
-            <h3>Business outcomes first</h3>
-            <p class="muted">I work across product, operations, and stakeholders to turn business needs into clear workflows, measurable requirements, and release-ready solutions.</p>
+            <span class="section-label">Business Analyst · Product Owner</span>
+            <h1>Md. Moshaheb Hossain</h1>
+            <p class="lede">Over 4 years transforming complex business requirements into innovative digital products. Expert in OTA platforms, enterprise ERP, fintech, and multi-domain SaaS solutions across the full SDLC.</p>
+            <div class="actions">
+              <a href="/Moshaheb_Hossain_CV.pdf" class="btn-gold" download>Download CV</a>
+              <a href="#projects" class="btn-outline-gold">View Domains →</a>
+            </div>
           </div>
-          <div>
-            <h3>Focus areas</h3>
-            <div>
-              <span class="pill">Process design</span>
-              <span class="pill">Requirements analysis</span>
-              <span class="pill">Stakeholder alignment</span>
-              <span class="pill">UAT support</span>
-              <span class="pill">Product documentation</span>
+          <div class="photo-card">
+            <div class="backing"></div>
+            <div style="position:absolute; top:-18px; left:-18px; width:24px; height:24px; border-top:2px solid var(--gold); border-left:2px solid var(--gold);"></div>
+            <div style="position:absolute; bottom:-18px; right:-18px; width:24px; height:24px; border-bottom:2px solid var(--gold); border-right:2px solid var(--gold);"></div>
+            <div class="gallery-img" style="position:relative; z-index:1; aspect-ratio:.82;">
+              <img src="/better-profile.jpg" alt="Md. Moshaheb Hossain" />
+            </div>
+            <div class="badge">
+              <div class="a">Award 2025</div>
+              <div class="b">Strategic BA of the Year</div>
+              <div class="c">US Bangla Group</div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section" id="skills">
-        <h2>Skills</h2>
-        <div class="card cols-3 grid">
-          <div><h3>Product</h3><p class="muted">Backlog grooming, prioritization, roadmap support, sprint coordination.</p></div>
-          <div><h3>Analysis</h3><p class="muted">Process flow, gap analysis, BRD/SRS, requirement validation.</p></div>
-          <div><h3>Communication</h3><p class="muted">Cross-functional collaboration, workshops, demos, and stakeholder updates.</p></div>
+
+      <section class="stats">
+        <div class="wrap stats-grid">
+          <div class="stat"><div class="num">4+</div><div class="label">Years Experience</div></div>
+          <div class="stat"><div class="num">12+</div><div class="label">Products Shipped</div></div>
+          <div class="stat"><div class="num">10K+</div><div class="label">ERP Users Served</div></div>
+          <div class="stat"><div class="num">8</div><div class="label">Domain Verticals</div></div>
         </div>
       </section>
-      <section class="section" id="experience">
-        <h2>Experience</h2>
-        <div class="card">
-          <h3>Business Analyst / Product Owner</h3>
-          <p class="muted">OTA, ERP, accounting, e-commerce, and ride-sharing domains.</p>
-          <ul class="list">
-            <li>Converted business goals into actionable user stories and acceptance criteria.</li>
-            <li>Worked with design, engineering, QA, and operations to ship improvements.</li>
-            <li>Supported releases, UAT, and issue triage to keep delivery on track.</li>
-          </ul>
+
+      <section id="skills" class="section">
+        <div class="wrap">
+          <div class="heading">
+            <span class="section-label">Expertise</span>
+            <h2>Core Competencies</h2>
+          </div>
+          <div class="card-grid cols-3">
+            <article class="competency-card">
+              <div class="icon">◆</div>
+              <h3>Business Analysis</h3>
+              <ul>
+                <li><span class="dot"></span>Requirement Elicitation</li>
+                <li><span class="dot"></span>BRD · FRD · SRS</li>
+                <li><span class="dot"></span>Gap Analysis</li>
+                <li><span class="dot"></span>BPMN 2.0 Modelling</li>
+                <li><span class="dot"></span>Stakeholder Management</li>
+              </ul>
+            </article>
+            <article class="competency-card">
+              <div class="icon">◈</div>
+              <h3>Product Ownership</h3>
+              <ul>
+                <li><span class="dot"></span>Product Roadmapping</li>
+                <li><span class="dot"></span>User Stories & Epics</li>
+                <li><span class="dot"></span>Sprint Planning</li>
+                <li><span class="dot"></span>Backlog Management</li>
+                <li><span class="dot"></span>Release Planning</li>
+              </ul>
+            </article>
+            <article class="competency-card">
+              <div class="icon">◇</div>
+              <h3>Data & Analytics</h3>
+              <ul>
+                <li><span class="dot"></span>Data Analysis</li>
+                <li><span class="dot"></span>Power BI / Tableau</li>
+                <li><span class="dot"></span>SQL Querying</li>
+                <li><span class="dot"></span>Business Intelligence</li>
+                <li><span class="dot"></span>Heatmap Analytics</li>
+              </ul>
+            </article>
+            <article class="competency-card">
+              <div class="icon">◉</div>
+              <h3>Technical Skills</h3>
+              <ul>
+                <li><span class="dot"></span>Figma Wireframing</li>
+                <li><span class="dot"></span>JIRA / Confluence</li>
+                <li><span class="dot"></span>Postman API Analysis</li>
+                <li><span class="dot"></span>UML Diagrams</li>
+                <li><span class="dot"></span>Technical Documentation</li>
+              </ul>
+            </article>
+          </div>
         </div>
       </section>
-      <section class="section" id="projects">
-        <h2>Projects</h2>
-        <div class="card cols-3 grid">
-          <div><h3>Travel / OTA</h3><p class="muted">Booking flow, supplier integration, and reconciliation support.</p></div>
-          <div><h3>ERP Workflow</h3><p class="muted">Process mapping, approvals, and reporting enhancements.</p></div>
-          <div><h3>Customer Platform</h3><p class="muted">Operational improvements for e-commerce and service delivery.</p></div>
+
+      <section id="about" class="section">
+        <div class="wrap">
+          <div class="heading">
+            <span class="section-label">The Person</span>
+            <h2>About Moshaheb Hossain</h2>
+          </div>
+          <div class="gallery" style="margin-bottom:5rem;">
+            <div class="gallery-img" style="grid-row:1 / 3; aspect-ratio:.7;"><img src="/better-profile.jpg" alt="Moshaheb Hossain professional photo" /></div>
+            <div class="gallery-img" style="grid-column:2 / 4; aspect-ratio:2.1;"><img src="/photo-1.jpg" alt="Moshaheb Hossain" /></div>
+            <div class="gallery-img" style="aspect-ratio:1;"><img src="/photo-2.jpg" alt="Moshaheb Hossain" /></div>
+            <div class="gallery-img" style="aspect-ratio:1;"><img src="/photo-3.jpg" alt="Moshaheb Hossain" /></div>
+          </div>
+          <div class="cols-2">
+            <div>
+              <span class="section-label">Professional Summary</span>
+              <div style="margin-top:1.5rem; display:flex; flex-direction:column; gap:1.25rem;">
+                <p class="small">With over 4 years of experience in the IT and Tech industry, I specialize in Business Analysis and Product Management across the complete Software Development Life Cycle (SDLC), with strong command of both Agile and Waterfall methodologies.</p>
+                <p class="small">Proficient in creating comprehensive documentation including Business Requirement Documents (BRD), Functional Requirement Documents (FRD), Use Case Specifications, Workflows, Implementation Guides, and Requirement Traceability Matrix (RTM).</p>
+                <p class="small">My expertise spans Requirement Elicitation & Prioritization, Scope Management, Gap Analysis, Stakeholder Management, Sprint Planning, Product Backlog Management, and Change Request Management. I excel in creating User Stories, UML diagrams, and Wireframes using Figma.</p>
+                <p class="small">Awarded Strategic Business Analyst of the Year 2025 at US Bangla Group for exceptional contribution to OTA platform development and enterprise ERP implementation.</p>
+              </div>
+              <div style="margin-top:2rem; display:flex; flex-wrap:wrap; gap:.5rem;">
+                <span class="pill">SDLC Expert</span>
+                <span class="pill">Agile & Waterfall</span>
+                <span class="pill">Technical Documentation</span>
+                <span class="pill">Data Analysis</span>
+                <span class="pill">UX Design</span>
+              </div>
+            </div>
+            <div style="border-left:1px solid var(--border); padding-left:3rem;">
+              <span class="section-label">Quick Facts</span>
+              <div style="margin-top:1.5rem; display:flex; flex-direction:column; gap:1.5rem;">
+                <div><div style="font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; color:#5A5550; margin-bottom:.2rem; font-weight:600;">Current Role</div><div style="font-size:.85rem;">Business Analyst → Product Owner</div></div>
+                <div><div style="font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; color:#5A5550; margin-bottom:.2rem; font-weight:600;">Company</div><div style="font-size:.85rem;">TechnoNext (US Bangla Group)</div></div>
+                <div><div style="font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; color:#5A5550; margin-bottom:.2rem; font-weight:600;">Location</div><div style="font-size:.85rem;">Dhaka, Bangladesh</div></div>
+                <div><div style="font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; color:#5A5550; margin-bottom:.2rem; font-weight:600;">Education</div><div style="font-size:.85rem;">BSc in CSE, BAUST</div></div>
+                <div><div style="font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; color:#5A5550; margin-bottom:.2rem; font-weight:600;">Experience</div><div style="font-size:.85rem;">4+ Years in IT/Tech</div></div>
+                <div><div style="font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; color:#5A5550; margin-bottom:.2rem; font-weight:600;">Award</div><div style="font-size:.85rem;">Strategic BA of the Year 2025</div></div>
+                <div><div style="font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; color:#5A5550; margin-bottom:.2rem; font-weight:600;">Publication</div><div style="font-size:.85rem;">IJRASET, Vol. 10, 2022</div></div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      <section id="projects" class="section">
+        <div class="wrap">
+          <div class="heading">
+            <span class="section-label">Work Portfolio</span>
+            <h2>Domain Expertise</h2>
+            <p class="small" style="max-width:560px; margin-top:1rem;">Extensive experience across 8 distinct industries, delivering full-lifecycle business analysis and product ownership for complex software systems.</p>
+          </div>
+          <div class="card-grid cols-3">
+            <article class="domain-card" style="padding:2.25rem 2rem;"><div style="font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:#5A5550; margin-bottom:.75rem; font-weight:600;">Travel & Tourism</div><h3 style="font-size:1.35rem; margin-bottom:.75rem;">OTA Platforms (B2C & B2B)</h3><p class="small">Flight, Hotel, Visa, Tour, e-SIM, and Ancillaries for consumer and business travelers.</p><ul class="small" style="list-style:none; padding:0; margin:1.25rem 0 0; display:flex; flex-direction:column; gap:.4rem;"><li><span class="dot"></span> GDS / Airline Supplier Integration</li><li><span class="dot"></span> Branded Fare & Partner Perks</li><li><span class="dot"></span> Auto-issue, Reissue & Refund Automation</li><li><span class="dot"></span> Multi-gateway Payment (EBL, MTB, MFS)</li><li><span class="dot"></span> PCI DSS Compliance</li></ul></article>
+            <article class="domain-card" style="padding:2.25rem 2rem;"><div style="font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:#5A5550; margin-bottom:.75rem; font-weight:600;">Finance & Accounting</div><h3 style="font-size:1.35rem; margin-bottom:.75rem;">SaaS Accounting Systems</h3><p class="small">Multi-entity financial management solutions for fast-growing startups and enterprises.</p><ul class="small" style="list-style:none; padding:0; margin:1.25rem 0 0; display:flex; flex-direction:column; gap:.4rem;"><li><span class="dot"></span> Multi-entity SaaS Accounting Platform</li><li><span class="dot"></span> Automated Reconciliation Process</li><li><span class="dot"></span> Financial Reporting & Compliance</li><li><span class="dot"></span> Seller Module & Accounting Features</li><li><span class="dot"></span> Cartup Seller Integration</li></ul></article>
+            <article class="domain-card" style="padding:2.25rem 2rem;"><div style="font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:#5A5550; margin-bottom:.75rem; font-weight:600;">Retail & Commerce</div><h3 style="font-size:1.35rem; margin-bottom:.75rem;">E-Commerce Platforms</h3><p class="small">End-to-end online marketplace solutions with payments, inventory, and seller management.</p><ul class="small" style="list-style:none; padding:0; margin:1.25rem 0 0; display:flex; flex-direction:column; gap:.4rem;"><li><span class="dot"></span> Payment Gateway Integration (PCI DSS)</li><li><span class="dot"></span> Multi-vendor Marketplace Systems</li><li><span class="dot"></span> Cart & Checkout Optimization</li><li><span class="dot"></span> Inventory & Order Management</li><li><span class="dot"></span> Foodi Map & Delivery Zone Solutions</li></ul></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="section">
+        <div class="wrap">
+          <div class="heading">
+            <span class="section-label">Career History</span>
+            <h2>Résumé</h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline-line"></div>
+            <div style="display:flex; flex-direction:column; gap:3rem;">
+              <div class="job"><div class="timeline-dot"></div><div class="job-card"><div style="display:inline-block; font-size:.65rem; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); background:rgba(201,165,90,.08); border:1px solid rgba(201,165,90,.2); padding:.2rem .6rem; border-radius:2px; margin-bottom:.9rem; font-weight:600;">2025 / 07 — Present</div><h3 style="font-size:1.4rem; margin-bottom:.25rem;">Business Analyst → Product Owner</h3><div class="small" style="margin-bottom:1rem;">TechnoNext Software Limited — US Bangla Group · Dhaka, Bangladesh</div><p class="small" style="margin-bottom:1.25rem;">Full Product Owner for Firsttrip B2C OTA platform covering Flight, Hotel, Visa, e-SIM, and Ancillaries. Integrated Airolo e-SIM, TripAdd service, and multi-gateway payment with PCI DSS compliance. Delivered the US Bangla Group ERP for 10,000+ active users across 5 modules. Awarded Strategic Business Analyst of the Year 2025.</p><div><span class="pill">Product Ownership</span><span class="pill">OTA Platform</span><span class="pill">PCI DSS</span><span class="pill">ERP</span><span class="pill">Agile/Scrum</span><span class="pill">JIRA</span><span class="pill">Figma</span><span class="pill">Sprint Planning</span></div></div></div>
+              <div class="job"><div class="timeline-dot"></div><div class="job-card"><div style="display:inline-block; font-size:.65rem; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); background:rgba(201,165,90,.08); border:1px solid rgba(201,165,90,.2); padding:.2rem .6rem; border-radius:2px; margin-bottom:.9rem; font-weight:600;">2023 / 12 — 2025 / 06</div><h3 style="font-size:1.4rem; margin-bottom:.25rem;">Jr. Business Analyst</h3><div class="small" style="margin-bottom:1rem;">TechnoNext Software Limited — US Bangla Group · Dhaka, Bangladesh</div><p class="small" style="margin-bottom:1.25rem;">Independently built a multi-entity SaaS Accounting System for four live platforms. Delivered B2B flight modules for four OTA platforms. Directed the PortYou ride-sharing MVP from zero to production-ready. Implemented aviation management systems for US Bangla Airlines including fuel efficiency and flight safety modules.</p><div><span class="pill">Business Analysis</span><span class="pill">SaaS Accounting</span><span class="pill">B2B Flight</span><span class="pill">Ride-sharing</span><span class="pill">Aviation</span><span class="pill">SQL</span><span class="pill">Power BI</span><span class="pill">Figma</span></div></div></div>
+              <div class="job"><div class="timeline-dot"></div><div class="job-card"><div style="display:inline-block; font-size:.65rem; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); background:rgba(201,165,90,.08); border:1px solid rgba(201,165,90,.2); padding:.2rem .6rem; border-radius:2px; margin-bottom:.9rem; font-weight:600;">2022 / 09 — 2023 / 11</div><h3 style="font-size:1.4rem; margin-bottom:.25rem;">Technical Business Analyst</h3><div class="small" style="margin-bottom:1rem;">Developer eXperience Hub · Dhaka, Bangladesh</div><p class="small" style="margin-bottom:1.25rem;">Designed Sharp Archive, a cross-platform social media data archiving system. Reduced requirement ambiguity and development rework on ERP projects handling 10,000+ enterprise users. Built proficiency in BPMN process modelling and stakeholder management.</p><div><span class="pill">Technical Analysis</span><span class="pill">ERP</span><span class="pill">BPMN 2.0</span><span class="pill">Use Cases</span><span class="pill">Stakeholder Management</span><span class="pill">Documentation</span></div></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="contact">
-        <h2>Contact</h2>
-        <div class="card cols-2 grid">
-          <div><h3>Let's connect</h3><p class="muted">Email: moshaheb.hossain007@gmail.com</p></div>
-          <div><h3>Quick links</h3><p class="muted"><a href="mailto:moshaheb.hossain007@gmail.com">Send email</a> · <a href="#about">About</a> · <a href="#projects">Projects</a></p></div>
+        <div class="wrap">
+          <div style="background: linear-gradient(135deg, #141210 0%, #1A1614 100%); border:1px solid #252118; border-radius:4px; padding:3.5rem 2.5rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:2rem;">
+            <div>
+              <h2 style="font-size:1.8rem; margin-bottom:.4rem;">Ready to collaborate?</h2>
+              <p class="small">Open to new opportunities and product challenges.</p>
+            </div>
+            <div style="display:flex; gap:.9rem; flex-wrap:wrap;">
+              <a href="/contact" class="btn-gold">Get in Touch</a>
+              <a href="/resume" class="btn-outline-gold">View Resume</a>
+            </div>
+          </div>
         </div>
       </section>
-      <div class="footer">© 2026 Moshaheb Hossain</div>
     </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <h3>Moshaheb Hossain</h3>
+            <p class="small">Business Analyst & Product Owner<br />Dhaka, Bangladesh</p>
+          </div>
+          <div>
+            <div class="label">Navigation</div>
+            <div style="display:flex; flex-direction:column; gap:.4rem;">
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#resume">Resume</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+          <div>
+            <div class="label">Contact</div>
+            <div style="display:flex; flex-direction:column; gap:.4rem;">
+              <a href="tel:+8801720334313">+880 1720 334313</a>
+              <a href="mailto:moshahebhossain007@gmail.com">moshahebhossain007@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">© 2026 Md. Moshaheb Hossain. All rights reserved.</div>
+      </div>
+    </footer>
   </body>
 </html>
