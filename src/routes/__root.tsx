@@ -52,7 +52,7 @@ function Nav() {
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 1.5rem', height: 64, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         {/* Logo */}
         <Link to="/" style={{ textDecoration: 'none', fontFamily: "'Cormorant Garamond', serif", fontSize: '1.45rem', fontWeight: 600, color: '#F0EBE3', letterSpacing: '-0.02em', lineHeight: 1 }}>
-          Moshaheb<span style={{ color: '#C9A55A' }}>.</span>
+          Moshaheb Hossain
         </Link>
 
         {/* Desktop links */}
@@ -118,7 +118,7 @@ function Footer() {
       <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', marginBottom: '2.5rem' }}>
         <div>
           <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.5rem', fontWeight: 600, color: '#F0EBE3', marginBottom: '0.5rem' }}>
-            Moshaheb<span style={{ color: '#C9A55A' }}>.</span>
+            Moshaheb Hossain
           </div>
           <p style={{ fontSize: '0.75rem', color: '#5A5550', lineHeight: 1.7 }}>
             Business Analyst & Product Owner<br />Dhaka, Bangladesh

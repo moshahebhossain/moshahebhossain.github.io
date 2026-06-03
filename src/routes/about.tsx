@@ -54,7 +54,7 @@ function About() {
           <span className="section-label">The Person</span>
           <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 600, color: '#F0EBE3', letterSpacing: '-0.02em', marginTop: '0.3rem', maxWidth: 680 }}>
             About<br />
-            <span style={{ fontStyle: 'italic', color: '#C9A55A' }}>Moshaheb</span>
+            <span style={{ fontStyle: 'italic', color: '#C9A55A' }}>Moshaheb Hossain</span>
           </h1>
         </div>
       </section>

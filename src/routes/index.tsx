@@ -56,8 +56,7 @@ function Home() {
               marginBottom: '1.5rem',
               marginTop: '0.25rem',
             }}>
-              Md. Moshaheb<br />
-              <span style={{ fontStyle: 'italic', color: '#C9A55A' }}>Hossain</span>
+              Md. Moshaheb Hossain
             </h1>
 
             <p style={{ fontSize: '1rem', color: '#7A7166', lineHeight: 1.8, maxWidth: 520, marginBottom: '2.5rem' }}>
