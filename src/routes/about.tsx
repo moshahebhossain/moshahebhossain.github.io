@@ -23,28 +23,28 @@ const ARTEFACTS = [
 
 const GALLERY = [
   {
-    src: '/.netlify/images?url=%2Fbetter-profile.jpg&w=700&h=800&fit=cover&position=top',
+    src: '/better-profile.jpg',
     alt: 'Moshaheb Hossain — Professional',
     span: 'tall',
   },
   {
-    src: '/.netlify/images?url=%2Fphoto-1.jpg&w=600&h=420&fit=cover&position=center',
+    src: '/photo-1.jpg',
     alt: 'Moshaheb Hossain',
     span: 'wide',
   },
   {
-    src: '/.netlify/images?url=%2Fphoto-2.jpg&w=420&h=420&fit=cover&position=center',
+    src: '/photo-2.jpg',
     alt: 'Moshaheb Hossain',
     span: 'square',
   },
   {
-    src: '/.netlify/images?url=%2Fphoto-3.jpg&w=700&h=480&fit=cover&position=center',
+    src: '/photo-3.jpg',
     alt: 'Moshaheb Hossain',
     span: 'wide',
   },
 ]
 
-export default function About() {
+function About() {
   return (
     <div style={{ background: '#0A0908', paddingTop: '5rem' }}>
 
@@ -221,3 +221,5 @@ export default function About() {
     </div>
   )
 }
+
+export default About

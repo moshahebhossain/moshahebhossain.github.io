@@ -1,4 +1,4 @@
-import { HeadContent, Scripts, createRootRoute, Link } from '@tanstack/react-router'
+import { HeadContent, Link, Scripts, createRootRoute, useRouter } from '@tanstack/react-router'
 import { useState, useEffect, type ReactNode } from 'react'
 import '../styles.css'
 
@@ -150,6 +150,19 @@ function Footer() {
 }
 
 function RootDocument({ children }: { children: ReactNode }) {
+  const router = useRouter()
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+
+    const search = new URLSearchParams(window.location.search)
+    const redirectedPath = search.get('p')
+
+    if (!redirectedPath || !redirectedPath.startsWith('/')) return
+
+    router.navigate({ to: redirectedPath as never, replace: true })
+  }, [router])
+
   return (
     <html lang="en">
       <head>

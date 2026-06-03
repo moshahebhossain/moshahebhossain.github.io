@@ -119,7 +119,7 @@ const DOMAINS = [
   },
 ]
 
-export default function Domains() {
+function Domains() {
   return (
     <div style={{ background: '#0A0908', paddingTop: '5rem' }}>
 
@@ -203,3 +203,5 @@ export default function Domains() {
     </div>
   )
 }
+
+export default Domains

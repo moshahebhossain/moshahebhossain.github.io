@@ -12,7 +12,7 @@ const CERTIFICATIONS = [
   { title: 'Huawei — Future of Mobile App', year: '2021', icon: '◉' },
 ]
 
-export default function Resume() {
+function Resume() {
   const jobs = [...allJobs].sort(
     (a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime(),
   )
@@ -177,3 +177,5 @@ export default function Resume() {
     </div>
   )
 }
+
+export default Resume

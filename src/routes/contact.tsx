@@ -55,22 +55,35 @@ const SOCIAL_LINKS = [
   },
 ]
 
-export default function Contact() {
+function Contact() {
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setLoading(true)
+
     const form = e.currentTarget
     const data = new FormData(form)
-    fetch('/contact.html', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(data as unknown as Record<string, string>).toString(),
-    })
-      .then(() => { setSubmitted(true); setLoading(false) })
-      .catch(() => setLoading(false))
+    const name = String(data.get('name') ?? '')
+    const email = String(data.get('email') ?? '')
+    const subject = String(data.get('subject') ?? 'Collaboration opportunity')
+    const message = String(data.get('message') ?? '')
+
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      '',
+      message,
+    ].join('\n')
+
+    const mailto = new URL('mailto:moshahebhossain007@gmail.com')
+    mailto.searchParams.set('subject', subject)
+    mailto.searchParams.set('body', body)
+
+    window.location.href = mailto.toString()
+    setSubmitted(true)
+    setLoading(false)
   }
 
   return (
@@ -235,3 +248,5 @@ export default function Contact() {
     </div>
   )
 }
+
+export default Contact

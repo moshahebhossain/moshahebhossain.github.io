@@ -34,7 +34,7 @@ const COMPETENCIES = [
   },
 ]
 
-export default function Home() {
+function Home() {
   return (
     <div style={{ background: '#0A0908', minHeight: '100vh' }}>
 
@@ -93,7 +93,7 @@ export default function Home() {
 
             <div className="gallery-img" style={{ aspectRatio: '0.82', position: 'relative', zIndex: 1 }}>
               <img
-                src="/.netlify/images?url=%2Fbetter-profile.jpg&w=600&h=730&fit=cover&position=top"
+                src="/better-profile.jpg"
                 alt="Md. Moshaheb Hossain"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '2px', display: 'block' }}
               />
@@ -188,3 +188,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home
