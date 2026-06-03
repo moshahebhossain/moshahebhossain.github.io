@@ -41,3 +41,5 @@ netlify dev --port 8889
 - `public/profile.jpg` — primary profile photo
 - `public/photo-1.jpg`, `photo-2.jpg`, `photo-3.jpg` — gallery images
 - `public/Moshaheb_Hossain_CV.pdf` — downloadable CV
+
+<!-- pages-rebuild-trigger: 2026-06-03 -->
