@@ -9,6 +9,10 @@
       var path = window.location.pathname;
       var search = window.location.search || '';
       var hash = window.location.hash || '';
+      // If we've already been redirected (search contains `p=`), don't re-redirect.
+      if (search.indexOf('p=') !== -1) {
+        return;
+      }
       var target = '/?p=' + encodeURIComponent(path) + search + hash;
       window.location.replace(target);
     })();
