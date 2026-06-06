@@ -30,7 +30,7 @@ npm install
 npm run dev
 ```
 
-Runs on `http://localhost:3000`. Netlify-specific features (Image CDN, Forms) require the Netlify CLI:
+Runs on `http://localhost:3000`. (Image CDN, Forms) require the Netlify CLI:
 
 ```bash
 netlify dev --port 8889
